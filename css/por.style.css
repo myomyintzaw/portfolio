@@ -1,0 +1,375 @@
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidenavbe {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+ 
+  .sidenavbe a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  } 
+  
+  .sidenavbe a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenavbe .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition:margin-left .5s;
+    padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+ 
+
+
+/* ldlsd */
+
+ /* #mySidenav a {
+    position: absolute;
+    /* position: fixed; */
+    
+   /* left:0px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    margin-top:194px;
+  }
+  
+  #mySidenavcc a:hover {
+    left: 12px;
+  }
+  
+  #about {
+    top: 20px;
+    background-color: #04AA6D;
+  }
+  
+  #blog {
+    top: 80px;
+    background-color: #2196F3;
+  }
+  
+  #projects {
+    top: 140px;
+    background-color: #f44336;
+  }
+  
+  #contact {
+    top: 200px;
+    background-color: #555
+  } 
+
+
+  .ac{
+    width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+
+  } */
+
+  /* @media screen and (max-width:860px){
+ 
+    @keyframes  example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+  } */
+
+/* 
+  @media screen and (max-width:860px){
+
+    @keyframes  example {
+    0%   {background-color:red; left:0px; top:0px;}   
+    25%  {background-color:yellow; left:-200px;right:0px;}
+    75%  {background-color:green; left:0px; right:-200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+  } 
+  Hover nav bar first end
+  */
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+ 
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.9s; /* Add transition on hover */
+  padding: 7px; /* 15px padding */
+  width: 150px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  margin-top: 223px;
+  margin-left:3px;
+}
+
+.c{
+  margin-bottom: 23px;
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+  top: 20px;
+  background-color: #04AA6D;
+ 
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3; /* Blue */
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336; /* Red */
+}
+
+#contact {
+  top: 200px;
+  background-color: #555 /* Light Black */
+}
+
+
+
+
+
+/* 
+  @media screen and (max-width:690px){
+
+    @keyframes example{
+    0% {background-color:red; left:-200px; top:0px;} 
+    25% {background-color:yellow; left:-20px;}
+   
+  }
+  }
+
+
+
+  @media screen and (max-width:1400px){
+
+    @keyframes example{
+      0% {background-color:red; left:-200px; top:0px;} 
+      25% {background-color:yellow; left:-20px;}
+
+    
+  }
+  } 
+
+
+  @media screen and (max-width:390px){
+
+    @keyframes example{
+    0% {background-color:red; left:200px;display: none;} 
+    
+   
+  }
+  } */
+/* 
+  @media screen and (max-width:190px){
+    @keyframes example{
+    0%   {background-color:red; left:0px; top:0px;}   
+    25%  {background-color:yellow; left:-200px;right:0px;}
+    75%  {background-color:green; left:0px; right:-200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+  }
+  
+
+
+
+@media screen and (max-width:150px){
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    
+    100% {background-color:red; left:0px; right:0px;}
+    
+  }
+ 
+}
+
+
+@media screen and (max-width: 870px) {
+  div.example {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width:950){
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    
+    100% {background-color:red; left:0px; right:200px;}
+  }
+
+}
+  */
+
+
+
+
+  /* for new .portfolio */
+
+/* 
+  @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: #5d4954;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .logo{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size:22px;
+  }
+  
+  .nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+  }
+  
+  .nav-links li{
+    list-style:none;
+    
+  }
+  .nav-links a{
+    color: rgb(226,226,226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight:bold;
+    font-size:14px;
+  }
+  
+  .burger{
+    display:none;
+    cursor: pointer;
+  }
+  
+  .burger div{
+    width:25px;
+    height:3px;
+    background-color:rgb(20, 19, 19);
+    margin: 5px;
+    transition: all 0.3s ease
+    
+    /* background-color:#5d4954; 
+    
+  }
+  
+  @media screen and (max-width:1024px){
+    .nav-links{
+      width:60%;
+    }
+  }
+  
+  @media screen and (max-width:768px){
+    body{
+      overflow-x: hidden;
+    }
+    .nav-links{
+      position:absolute;
+      right:0px;
+      height:92vh;
+      top: 8vh;
+      background-color:#5d4954;
+      display:flex;
+      flex-direction: column;  
+      align-items: center;
+      width:50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+      opacity: 0;
+    }
+    .burger{
+      display:block;
+    }
+  }
+  
+  .nav-active{
+    transform: translateX(0%);
+  }
+  
+  @keyframes navLinkFade{
+    from{
+      opacity:0;
+      transform: translateX(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .toggle .line1{
+    transform: rotate(-40deg) translate(-5px,6px);
+  }
+  
+  .toggle .line2{
+    transform: rotate(90deg) translate(0px,0px);
+  }
+  
+  .toggle .line3{
+    transform: rotate(35deg) translate(-5px,-6px);
+  }
+
+
+ */
