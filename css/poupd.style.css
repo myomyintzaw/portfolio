@@ -1252,9 +1252,23 @@ body{
 
 @media screen and (max-width:360px){ 
   #first-sec{
-      height:309vh;
-   background-color:rgb(0, 70, 128);
+      height:209vh;
+/*    background-color:rgb(0, 70, 128); */
   }
+} 
+.hie{
+    height:132px;
+  
+  }
+
+ @media screen and (max-width:322px){ 
+    #first-sec{
+        height:209vh;
+     /* background-color:rgb(39, 167, 189); */
+    }
+    .hie{
+      height:125px;
+    }
 } 
 
 /* #first-sec {
