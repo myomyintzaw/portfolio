@@ -1252,7 +1252,7 @@ body{
 
 @media screen and (max-width:360px){ 
   #first-sec{
-      height:39vh;
+      height:439vh;
    background-color:rgb(0, 70, 128);
   }
   .hie{
@@ -1266,7 +1266,7 @@ body{
 
   @media screen and (max-width:322px){ 
     #first-sec{
-        height:36vh;
+        height:336vh;
      /* background-color:rgb(39, 167, 189); */
     }
     .hie{
