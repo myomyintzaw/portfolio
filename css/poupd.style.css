@@ -1209,7 +1209,7 @@ body{
 
 @media screen and (max-width:420px){ 
   #first-sec{
-      height:265vh;
+      height:678vh;
    background-color:blue;
   }
 } 
@@ -1220,7 +1220,7 @@ body{
 @media screen and (max-width:399px){ 
   #first-sec{
       height:295vh;
-   background-color:rgb(217, 0, 255);
+   /* background-color:rgb(217, 0, 255); */
   }
 } 
 
@@ -1229,7 +1229,7 @@ body{
 @media screen and (max-width:384px){ 
   #first-sec{
       height:280vh;
-   background-color:purple;
+   /* background-color:purple; */
   }
 } 
 
@@ -1253,21 +1253,24 @@ body{
 @media screen and (max-width:360px){ 
   #first-sec{
       height:209vh;
-/*    background-color:rgb(0, 70, 128); */
+   background-color:rgb(0, 70, 128);
   }
-} 
-.hie{
-    height:132px;
+  .hie{
+    height:122px;
   
   }
+  /* .opv{
+    offset:18px;
+  } */
+}
 
- @media screen and (max-width:322px){ 
+  @media screen and (max-width:322px){ 
     #first-sec{
         height:209vh;
      /* background-color:rgb(39, 167, 189); */
     }
     .hie{
-      height:125px;
+      height:155px;
     }
 } 
 
