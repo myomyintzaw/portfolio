@@ -1209,7 +1209,7 @@ body{
 
 @media screen and (max-width:420px){ 
   #first-sec{
-      height:678vh;
+      height:278vh;
    background-color:blue;
   }
 } 
@@ -1219,7 +1219,7 @@ body{
 
 @media screen and (max-width:399px){ 
   #first-sec{
-      height:295vh;
+      height:145vh;
    /* background-color:rgb(217, 0, 255); */
   }
 } 
@@ -1238,21 +1238,21 @@ body{
 
 @media screen and (max-width:378px) and (max-height:820px){ 
   #first-sec{
-      height:313vh;
+      height:133vh;
    background-color:rgb(43, 255, 0);
   }
 } 
 
 @media screen and (max-width:377px) and (max-height:700px){ 
   #first-sec{
-      height:363vh;
+      height:143vh;
    background-color:rgb(132, 162, 126);
   }
 } 
 
 @media screen and (max-width:360px){ 
   #first-sec{
-      height:209vh;
+      height:149vh;
    background-color:rgb(0, 70, 128);
   }
   .hie{
@@ -1266,7 +1266,7 @@ body{
 
   @media screen and (max-width:322px){ 
     #first-sec{
-        height:209vh;
+        height:149vh;
      /* background-color:rgb(39, 167, 189); */
     }
     .hie{
