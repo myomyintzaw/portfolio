@@ -1252,11 +1252,11 @@ body{
 
 @media screen and (max-width:360px){ 
   #first-sec{
-      height:309vh;
+      height:289vh;
    background-color:rgb(0, 70, 128);
   }
   .hie{
-    height:148px;
+    height:48px;
   
   }
   /* .opv{
@@ -1266,11 +1266,11 @@ body{
 
   @media screen and (max-width:322px){ 
     #first-sec{
-        height:309vh;
+        height:289vh;
      /* background-color:rgb(39, 167, 189); */
     }
     .hie{
-      height:148px;
+      height:48px;
     }
 } 
 
