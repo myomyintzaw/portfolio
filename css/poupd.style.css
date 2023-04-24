@@ -1190,17 +1190,69 @@ body{
   }
 } 
 
+@media screen and (max-width:1295.5px){ 
+
+  .hie{
+    height:365px;
+/* 	  nup */
+  }
+} 
+
+@media screen and (max-width:1189px){ 
+
+  .hie{
+    height:115px;
+/* 	   nup */
+  }
+} 
+
 @media screen and (max-width:992px){ 
   #first-sec{
-      height:299vh;
+      height:179vh;
    /* background-color: red; */
   }
 } 
 
 
+@media screen and (max-width:990.5px){ 
+  #first-sec{
+      height:179vh;
+   /* background-color: red; */
+  }
+  .hie{
+    height:285px;
+  }
+} 
+
+
+
+@media screen and (max-width:700.5px){ 
+  #first-sec{
+      height:219vh;
+/*    background-color:rgb(65, 39, 39); */
+  }
+} 
+
+@media screen and (max-width:594.5px){ 
+  #first-sec{
+      height:179vh;
+/*    background-color:rgb(65, 39, 39); */
+  }
+} 
+
+
+@media screen and (max-width:487.5px){ 
+  #first-sec{
+      height:289vh;
+/*    background-color:rgb(39, 65, 65); */
+  }
+} 
+
+
+
 @media screen and (max-width:430px){ 
   #first-sec{
-      height:249vh;
+      height:289vh;
 /*    background-color:rgb(255, 119, 0); */
   }
 } 
@@ -1209,7 +1261,7 @@ body{
 
 @media screen and (max-width:420px){ 
   #first-sec{
-      height:678vh;
+      height:278vh;
 /*    background-color:blue; */
   }
 } 
@@ -1217,7 +1269,7 @@ body{
 
 
 
-@media screen and (max-width:399px){ 
+@media screen and (max-width:397px){ 
   #first-sec{
       height:295vh;
    /* background-color:rgb(217, 0, 255); */
