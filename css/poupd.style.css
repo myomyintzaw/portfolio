@@ -1193,7 +1193,7 @@ body{
    /* background-color:rgb(50, 205, 120); */
   }
   .hie{
-    height:1065px;
+    height:1165px;
   }
 } 
 
@@ -1204,7 +1204,7 @@ body{
    /* background-color:rgb(50, 205, 120); */
   }
   .hie{
-    height:965px;
+    height:1165px;
   }
 } 
 
@@ -1361,11 +1361,6 @@ body{
 
 
 
-
-
-
-
-
 @media screen and (max-width:397px){ 
   #first-sec{
       height:295vh;
@@ -1407,7 +1402,7 @@ body{
    /* background-color:rgb(0, 70, 128); */
   }
   .hie{
-    height:1348px;
+    height:1328px;
   
   }
   /* .opv{
@@ -1421,7 +1416,7 @@ body{
      /* background-color:rgb(39, 167, 189); */
     }
     .hie{
-      height:25px;
+      height:1328px;
     }
 } 
 
