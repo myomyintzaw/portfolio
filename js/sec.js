@@ -158,7 +158,7 @@ x.addListener(myFunction) // Attach listener function on state changes
 
 
 
-///////////////////circle skill bar on scroll start//////#1B58B8///////////  
+///////////////////circle skill bar on scroll start//////#1B58B8///#6923f4  aquamarine////////  
 
 console.log("JavaScript is amazing!");
 $(document).ready(function($) {
@@ -176,7 +176,7 @@ $(document).ready(function($) {
           value: percent / 100,
           thickness: 14,
           fill: {
-            color:'#6923f4'
+            color:'#4288d0'
           }
         }).on('circle-animation-progress', function(event, progress, stepValue) {
           $(this).find('div').text((stepValue * 100).toFixed(1) + "%");
@@ -201,7 +201,7 @@ $(document).ready(function($) {
 // Auto typing start ////////////////////////////////
 
 
-const words = ["        Myo Myint Zaw.  ","Web Developer.      ", "Freenacler.      ", "Photographer.    ","UI/UH Desingler.   "];
+const words = ["     Professional Development.   ","Design Solutions.      ","Creative Ideas.    ","Problem-Solving.     ", "Photograping.    ","UI/UH Desinging.   "];
 let i = 0;
 let timer;
 
