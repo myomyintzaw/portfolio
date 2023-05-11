@@ -1197,6 +1197,16 @@ body{
   }
 } 
 
+@media screen and (max-width:1437.5px){ 
+  #first-sec{
+      height:180vh;
+   /* background-color:rgb(50, 205, 120); */
+  }
+  .hie{
+    height:1165px;
+  }
+} 
+
 
 @media screen and (max-width:1328px){ 
   #first-sec{
