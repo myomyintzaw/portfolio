@@ -159,8 +159,8 @@ fixed positon  ///////////////////////*/
   z-index: 1;
   top: 0;
   left: 0;
-  /* background-color: #111; #6610f2 rgb(50, 14, 212) */
-  background-color: rgb(50, 14, 212);
+  /* background-color: #111; #6610f2 rgb(50, 14, 212) rgb(50, 14, 212) */
+  background-color:rgb(65, 100, 139);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
