@@ -28,8 +28,32 @@
 <script type="text/javascript" src="jquery.min.js"></script>
 
 
-
   <style>
+
+  .progress-barcep {
+  margin-bottom: 20px;
+}
+.progress-content-outter {
+  width: 100%;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.progress-content {
+  height: 100%;
+  width: 0;
+  background: #4caf50;
+  border-radius: 5px;
+}
+.progress-title-holder {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.percent {
+  font-weight: bold;
+}
+
   
   </style>
 </head>
@@ -241,12 +265,11 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
                                                         
 
                                                         <!-- skill start -->
-
  
-<div style="min-height:40px;"></div>
+<div style="min-height:100px;"></div>
 
 <!-- skill bar start -->
-<div class="container-fluid mt-5 border border-0 border-danger " id="first-sec"> <!--id="first-sec"  data-animation="slideInLeft" data-animation-delay=".2s"-->
+<div class="container-fluid mt-5 border border-0 border-danger "  > <!--id="first-sec"  data-animation="slideInLeft" data-animation-delay=".2s"-->
   <div class="row" ><h2 class="underline-small tex" data-animation="slideInUp" data-animation-delay=".3s">SKILLS</h2><p class="underline-smallgi" data-animation="slideInRight" data-animation-delay=".2s"></p>
   </div>
  
@@ -263,7 +286,7 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
 
  
    <!--  -->
-   <div class="container-fluid  border-0 border border-primary" style="margin-top:0px;margin-bottom:0px; ">  
+   <div class="container-fluid  border-0 border border-primary " style="margin-top:0px; " id="skillbar">  
       
       <!-- technical col start -->
       <div class=" col-xl-5 col-lg-5 col-md-11 col-sm-11 col-11 mt-0 mx-0 mx-sm-0 mx-md-0 mx-lg-0 mx-xl-0 mb-0   ">
@@ -370,26 +393,17 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
     </div>
   
 
-       <div class="progress-barcep" data-percentage="50%" >
-      <h4 class="progress-title-holder clearfix">
-            <span class="progress-title">C++ vs C#</span>
-                <span class="progress-number-wrapper">
-      <span class="progress-number-mark">
-        <span class="percent"></span>
-            <span class="down-arrow"></span>
-                </span>
-                </span>
-                </h4>
-      <div class="progress-content-outter">
-        <div class="progress-content"></div>
-      </div>
-    </div>
 
+      </div>
+
+      <!-- fist col-6 end -->
+      
+    <div class="col-xl-5 col-lg-5 col-md-11 col-sm-11 col-11 mt-0 mx-0 mx-sm-0 mx-md-0 mx-lg-0 mx-xl-0 mb-0   ">
 
 
       <div class="progress-barcep" data-percentage="25%" >
       <h4 class="progress-title-holder clearfix">
-            <span class="progress-title">Python</span>
+            <span class="progress-title">Tailwindcss</span>
                 <span class="progress-number-wrapper">
       <span class="progress-number-mark">
         <span class="percent"></span>
@@ -404,8 +418,7 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
 
 
 
-    
-    <div class="progress-barcep" data-percentage="65%" >
+         <div class="progress-barcep" data-percentage="65%" >
       <h4 class="progress-title-holder clearfix">
             <span class="progress-title">Bootstrap</span>
                 <span class="progress-number-wrapper">
@@ -421,10 +434,9 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
     </div>
 
 
-     
-    <div class="progress-barcep" data-percentage="20%" >
+        <div class="progress-barcep" data-percentage="36%" >
       <h4 class="progress-title-holder clearfix">
-            <span class="progress-title">Wordpress</span>
+            <span class="progress-title">Node.js</span>
                 <span class="progress-number-wrapper">
       <span class="progress-number-mark">
         <span class="percent"></span>
@@ -436,92 +448,6 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
         <div class="progress-content"></div>
       </div>
     </div>
-
-
-      
-      </div>
-
-      <!-- fist col-6 end -->
-      
-    <div class="col-xl-5 col-lg-5 col-md-11 col-sm-11 col-11 mt-0 mx-0 mx-sm-0 mx-md-0 mx-lg-0 mx-xl-0 mb-0   ">
-
-      
-      <!-- <div class="progress-barcep" data-percentage="65%" >
-        <h4 class="progress-title-holder clearfix">
-              <span class="progress-title">Java</span>
-                  <span class="progress-number-wrapper">
-        <span class="progress-number-mark">
-          <span class="percent"></span>
-              <span class="down-arrow"></span>
-                  </span>
-                  </span>
-                  </h4>
-        <div class="progress-content-outter">
-          <div class="progress-content"></div>
-        </div>
-      </div> -->
-
-      <!-- <div class="progress-barcep" data-percentage="65%" >
-        <h4 class="progress-title-holder clearfix">
-              <span class="progress-title">Django Framework</span>
-                  <span class="progress-number-wrapper">
-        <span class="progress-number-mark">
-          <span class="percent"></span>
-              <span class="down-arrow"></span>
-                  </span>
-                  </span>
-                  </h4>
-        <div class="progress-content-outter">
-          <div class="progress-content"></div>
-        </div>
-      </div> -->
-<!-- 
-      <div class="progress-barcep" data-percentage="65%" >
-        <h4 class="progress-title-holder clearfix">
-              <span class="progress-title">Vue.js</span>
-                  <span class="progress-number-wrapper">
-        <span class="progress-number-mark">
-          <span class="percent"></span>
-              <span class="down-arrow"></span>
-                  </span>
-                  </span>
-                  </h4>
-        <div class="progress-content-outter">
-          <div class="progress-content"></div>
-        </div>
-      </div> -->
-
-<!-- 
-      <div class="progress-barcep" data-percentage="68%" >
-        <h4 class="progress-title-holder clearfix">
-              <span class="progress-title">PyMySQL</span>
-                  <span class="progress-number-wrapper">
-        <span class="progress-number-mark">
-          <span class="percent"></span>
-              <span class="down-arrow"></span>
-                  </span>
-                  </span>
-                  </h4>
-        <div class="progress-content-outter">
-          <div class="progress-content"></div>
-        </div>
-      </div> -->
- 
- 
-       <!-- <div class="progress-barcep" data-percentage="60%" >
-        <h4 class="progress-title-holder clearfix">
-              <span class="progress-title">SQLITE3</span>
-                  <span class="progress-number-wrapper">
-        <span class="progress-number-mark">
-          <span class="percent"></span>
-              <span class="down-arrow"></span>
-                  </span>
-                  </span>
-                  </h4>
-        <div class="progress-content-outter">
-          <div class="progress-content"></div>
-        </div>
-      </div> -->
     
  
      <div class="progress-barcep" data-percentage="43%" >
@@ -554,68 +480,38 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
         </div>
       </div>
  
-        <!-- <div class="progress-barcep" data-percentage="63%" >
-        <h4 class="progress-title-holder clearfix">
-              <span class="progress-title">Native Android</span>
-                  <span class="progress-number-wrapper">
-        <span class="progress-number-mark">
-          <span class="percent"></span>
-              <span class="down-arrow"></span>
-                  </span>
-                  </span>
-                  </h4>
-        <div class="progress-content-outter">
-          <div class="progress-content"></div>
-        </div>
-      </div> -->
- 
- 
-        <!-- <div class="progress-barcep" data-percentage="53%" >
-        <h4 class="progress-title-holder clearfix">
-              <span class="progress-title">ios</span>
-                  <span class="progress-number-wrapper">
-        <span class="progress-number-mark">
-          <span class="percent"></span>
-              <span class="down-arrow"></span>
-                  </span>
-                  </span>
-                  </h4>
-        <div class="progress-content-outter">
-          <div class="progress-content"></div>
-        </div>
-      </div> -->
- 
- 
-      <div class="progress-barcep" data-percentage="50%" >
-        <h4 class="progress-title-holder clearfix">
-              <span class="progress-title">PHOTOSHOP</span>
-                  <span class="progress-number-wrapper">
-        <span class="progress-number-mark">
-          <span class="percent"></span>
-              <span class="down-arrow"></span>
-                  </span>
-                  </span>
-                  </h4>
-        <div class="progress-content-outter">
-          <div class="progress-content"></div>
-        </div>
+     
+      <div class="progress-barcep" data-percentage="30%" >
+      <h4 class="progress-title-holder clearfix">
+            <span class="progress-title">NoSQL</span>
+                <span class="progress-number-wrapper">
+      <span class="progress-number-mark">
+        <span class="percent"></span>
+            <span class="down-arrow"></span>
+                </span>
+                </span>
+                </h4>
+      <div class="progress-content-outter">
+        <div class="progress-content"></div>
       </div>
-    
-      </div>
- <!-- skill col-6 end -->
+    </div>
+    <!-- End show language -->
 
-  
-   
-   
-   </div>
+
+    </div>
+    </div>
    <!-- skill bar container-fluid end -->
    
-     
-     <script>
+    
+    <!-- <script>
        jQuery(document).ready(function() {
    /*MODIFICATION START*/
+
    jQuery(document).on('scroll', function(){
-   if(jQuery('html,body,Window').scrollTop()>jQuery('#first-sec').height()){
+   if(jQuery('html,body,Window').scrollTop()>jQuery('#first-sec').height())
+  // if (jQuery(window).scrollTop() > jQuery('#first-sec').offset().top + jQuery('#first-sec').outerHeight()) 
+
+   {
    /*MODIFICATION END*/
      jQuery(".progress-barcep").each(function() {
        jQuery(this).find(".progress-content").animate({
@@ -638,27 +534,76 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
    /*MODIFICATION END*/
    });
    
+   </script>  -->
+    
    
+<script>
+  jQuery(document).ready(function () {
+  let animated = false;
+
+  jQuery(window).on("scroll", function () {
+    let skillsTop = jQuery('#skillbar').offset().top;
+    let scrollPos = jQuery(window).scrollTop() + jQuery(window).height();
+
+    if (!animated && scrollPos > skillsTop) {
+      animated = true;
+
+      jQuery(".progress-barcep").each(function () {
+        // let $bar = jQuery(this);
+        // let target = $bar.attr("data-percentage");
+         
+
+        // // Animate bar fill
+        // $bar.find(".progress-content").animate({ width: target }, 2000);
+
+        // // Animate percentage text
+        // $({ count: 0 }).animate(
+        //   { count: parseInt(target) },
+        //   {
+        //     duration: 2000,
+        //     step: function (now) {
+        //       $bar.find(".percent").text(Math.round(now) + "%");
+        //     },
+        //   }
+        // );
+
+          jQuery(this).find(".progress-content").animate({
+         width: jQuery(this).attr("data-percentage")
+       },2000);
    
-   </script>
-   
-   
+       jQuery(this).find(".progress-number-mark").animate({
+         left: jQuery(this).attr("data-percentage")
+       },{
+         duration: 2000,
+         step: function(now, fx) {
+           var data = Math.round(now);
+           jQuery(this).find(".percent").html(data + "%");
+         }
+       });
+
+
+      });
+    }
+  });
+});
+
+</script>
+
+
    </div>
 </div>
    <!-- technical col end -->
 
 <!-- skill bar end -->
 
-<div style="min-height:55px;"></div>
-<div class="row mt-5 ">
-  <div class="offset-0 offset-lg-0  offset-xl-0 mb-0 justify-content-center" > <h1>Professional Skills</h1></div>
-</div> 
+<div style="min-height:80px;"></div>
 
-<div class="container-fluid">
-<div class="row   justify-content-center mb-5 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 ">
-<div class="col-11 col-sm-11 col-md-11 col-lg-11 col-xl-12  mb-5 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 ">
+<div class="container-fluid ">
+  
+<div class="row   justify-content-center ">
+<div class="col-11 col-sm-11 col-md-11 col-lg-11 col-xl-12   ">
 
- 
+ <h1>Professional Skills</h1>
 <div class="progressbar " data-animate="false">
 <div class="circlezc " data-percent="75">      
 <div style="color:#0dcaf0"></div>
@@ -723,7 +668,7 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
 <!-- end perfessional container -->
 
 <!-- end row skill bar -->
- <div section id="resume" style="min-height:5rem;" class="mt-2" ></div>
+ <div section id="resume" style="min-height:5rem;" class="mt-1" ></div>
 </div>
  
 </div>
@@ -742,7 +687,7 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
 
 <!-- <div style="height:-56px;" style="margin-top:-476px; "style="margin-top:-476px; " ></div> -->
 
-<div style="min-height:5rem;" >
+<div style="min-height:1rem;" >
    </div> 
 <!--     <div> fjkdjfkjksfeioiioeieioioeioeioeioeieii</div> -->
     
@@ -794,7 +739,7 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
   
   <div class="row mt-5 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5 justify-content-center border border-0 border-dark" >
   
-    <div class="row justify-content-center mt-5 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5">   
+    <div class="row justify-content-evenly  mt-5 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5">   
      <div class="row mt-lg-5 mt-xl-5 mt-5 border border-0 border-dark"><h2 class="underline-small tex" data-animation="slideInUp" data-animation-delay=".5s">SOME THINGS I'VE BUILT</h2><p class="underline-smallgi" data-animation="slideInRight" data-animation-delay=".5s"></p></div>
 
 
@@ -803,7 +748,7 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
         <div class="con">  
         <img  src="photo/profile-img.jpg" alt="Avatar" class="image rounded" style="height:195px;">
 
-        <div class="overlay"><div class="text">Css,jQuery,bootstrap</div></div>
+        <div class="overlay"><div class="text p-1">Html,Css,Javascript, Bootstrap</div></div>
       </div>   
       <div class="mt-4">PhotoFolio</div>
     </a>
@@ -814,7 +759,7 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
         <div class="con">  
         <img  src="photo/images.jfif" alt="Avatar" class="image rounded" style="height:195px;">
 
-        <div class="overlay"><div class="text">Css,JavaScript,bootstrap</div></div>
+        <div class="overlay"><div class="text p-1">Html,Css,JavaScript, Bootstrap</div></div>
       </div>   
       <div class="mt-4">Travel</div>
     </a>
@@ -825,18 +770,19 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
         <div class="con">  
         <img  src="photo/Training-Courses.webp" alt="Avatar" class="image rounded" style="height:195px;">
 
-        <div class="overlay"><div class="text">Css,JavaScript,bootstrap</div></div>
+        <div class="overlay"><div class="text p-1">Html,Css,JavaScript, Bootstrap</div></div>
       </div>   
       <div class="mt-4">Web Design & Development Services</div>
     </a>
       </div>
       
       <div class="col-xl-3 com-lg-3 col-md-4 com-sm-12 col-11 mx-3 mt-5 border-0 border border-danger text-center " data-animation="zoomIn" data-animation-delay="600ms">
+  
         <div class="con ">
-       <img src="photo/The-year-ahead-for-food-ordering-apps-Indian-Lawyers-Law-Firms-1280x720.jpg" alt="Avatar" class="image" style="height: 195px;" >
-       <a href="http://www.cg-m.com/coffee-mix.php"> <div class="overlay"> <div class="text">php,javascript,css,jquery & SQL </div></div></a>
+       <img src="photo/lap.jpg" alt="Avatar" class="image" style="height: 195px;" >
+       <a href="https://github.com/myomyintzaw/DragonCity"> <div class="overlay"> <div class="text p-1">Laravel jetstream,Bootstrap, Css,JavaScript,Ajax & SQL <br> <p><u>See Gitbub Link</u></p> </div></div></a>
       </div><br>
-      Adversting product website of company.
+      Adversting product website of company. 
     </div>
  
       <div class="col-xl-3 com-lg-3 col-md-4 com-sm-12 col-11 mx-3 mt-5 border-0 border border-danger text-center " data-animation="zoomIn" data-animation-delay="600ms">
@@ -885,6 +831,7 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
    <!-- image row end -->
    <div  section id="contact"></div>
   </div>
+  
   <!-- title project end -->
   
                                                        <!-- project show end -->
