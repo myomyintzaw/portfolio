@@ -200,8 +200,8 @@ $(document).ready(function($) {
 
 // Auto typing start ////////////////////////////////
 
-
-const words =["Profession Develop.   ","Design Solutions.      ","Creative Ideas.    ","Problem-Solving.     ", "Photograping.    ","UI/UH Desinging.      ",  "SQL/NoSQL"     ];
+// Photograping / Creative Ideas
+const words =["Profession Develop.   ","Design Solutions.      ","Creativity And Innovation.       ","Problem-Solving.       ", "Responsive Web Design.     ","UI/UH Desinging.      ",  "SQL/NoSQL.        "];
 let i = 0;
 let timer;
 
