@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">My Portfolio</h1>
+      <nav class="space-x-6">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+    <h2 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm [Your Name]</h2>
+    <p class="text-lg md:text-2xl mb-6">A passionate [Your Role: e.g., Web Developer, Designer, Engineer]</p>
+    <a href="#projects" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-4xl mx-auto py-16 px-6">
+    <h3 class="text-3xl font-bold mb-6 text-center">About Me</h3>
+    <p class="text-lg leading-relaxed text-gray-700">
+      I am a [Your Profession] with experience in [your skills/technologies]. I enjoy solving problems, building creative projects, and learning new technologies. My goal is to contribute meaningful work that makes an impact.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-gray-100 py-16 px-6">
+    <h3 class="text-3xl font-bold mb-10 text-center">Projects</h3>
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <!-- Project Card -->
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg p-6 transition">
+        <img src="https://via.placeholder.com/400x200" alt="Project" class="rounded-lg mb-4">
+        <h4 class="text-xl font-semibold mb-2">Project Title</h4>
+        <p class="text-gray-600 mb-4">Brief description of the project and the technologies used.</p>
+        <a href="#" class="text-blue-600 font-medium hover:underline">View Details</a>
+      </div>
+      <!-- Repeat for more projects -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-4xl mx-auto py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6">Get In Touch</h3>
+    <p class="text-lg text-gray-700 mb-6">I'd love to connect! Feel free to reach out via email or social media.</p>
+    <a href="mailto:youremail@example.com" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-blue-700">Email Me</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
