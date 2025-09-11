@@ -8,6 +8,13 @@
 
 <!-- slider end -->
 
+<!-- Bootstrap Slide show CSS -->
+ 
+ 
+  <!--End Bootstrap Slide show CSS -->
+
+
+
 <!-- google font -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
 
@@ -19,7 +26,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet" />  
 <link rel="stylesheet" href="styles/index.processed.css">
 <link href="css/poupd.style.css" rel="stylesheet"/>
-<!-- <link rel="stylesheet" href="css/animate.css"> -->
+<link rel="stylesheet" href="css/animate.css">
 <link href="https://fonts.googleapis.com/css?family=Cherry+Swash" rel="stylesheet"/>
 <link rel="stylesheet" type="text/css" href="./icofont.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet"/>
@@ -29,7 +36,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="jquery.min.js"></script>
-
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
   <style>
 
@@ -56,6 +63,12 @@
 .percent {
   font-weight: bold;
 }
+
+/* responsive slide show boots */
+    .carousel-inner > .item > img {
+      width: 100%;
+      height: auto;   /* Makes it responsive */
+    }
 
   
   </style>
@@ -108,12 +121,16 @@
   </nav>
 
   
- 
+
+
+
   <div id="navbar-example">
   <ul class="nav" role="tablist nav-tabs">  
   
   <div id="list-example"  class="container-fluid mt-5 list-group  border border-0 border-warning" >
   <div class="row border-0 border border-primary">
+    <!-- sec container zoom in -->
+    <div class="container-fluid">
 
   <div class="mt-5  col-md-0 col-lg-2 col-xl-2 border-0 border border-danger">
 
@@ -252,7 +269,7 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
     <!-- secound col end photo/JOb_CV.pdf -->
     <div section id="skill"></div>
 <div class=" mt-5 " data-animation="slideInUp" data-animation-delay="1s">
-  <a href="#"> <submit class="offset-3 offset-xl-4 offset-lg-1 btn btn-info "  style="color:#fff;font-size:medium;">Download CV  <i class="icofont-cloud-download siz" style="font-size:46px;" ></i></submit></a></div>
+  <a href="images/CV.pdf"> <submit class="offset-3 offset-xl-4 offset-lg-1 btn btn-info "  style="color:#fff;font-size:medium;">Download CV  <i class="icofont-cloud-download siz" style="font-size:46px;" ></i></submit></a></div>
 
   </div>
 <!-- col row end -->
@@ -691,16 +708,16 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
 
 <!-- <div style="height:-56px;" style="margin-top:-476px; "style="margin-top:-476px; " ></div> -->
 
-<div style="min-height:1rem;" >
+<div style="min-height:2rem;" >
    </div> 
 <!--     <div> fjkdjfkjksfeioiioeieioioeioeioeioeieii</div> -->
+  <div class="row  mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5 mt-5 "><h2 class="underline-small tex" data-animation="slideInDown" data-animation-delay="0.9s">RESUME</h2><p class="underline-smallgi" data-animation="slideInRight" data-animation-delay=".9s"></p></div>
     
 <div class="row res resume border border-0 border-dark  mt-sm-5 mt-lg-5 mt-xl-5 mt-md-5 mt-5  mb-5 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 ">
   <!-- <div class="row border border-0 border-danger " style="margin-top:5px;></div> -->
 
-<div class="mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5 mt-5 mx-3">
+<div class="mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5 mt-5 mx-3 col-12 col-sm-12 col-md-12 col-lg-6 ">
 <!-- <p>dgg</p> -->
-  <div class="row  mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5 mt-5 "><h2 class="underline-small tex" data-animation="slideInDown" data-animation-delay="0.9s">RESUME</h2><p class="underline-smallgi" data-animation="slideInRight" data-animation-delay=".9s"></p></div>
     
   <div class="row mx-5" style="margin-top:38px;">
        <div  class="row  border-0 border border-danger" >
@@ -729,21 +746,94 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
   
   </div>
   <!-- end fade-up -->
+
+
+
   </div>
-    <div style="min-height:2rem;" section id="work" class="mt-2"></div>
-  </div>
-   </div>                                              
+
+
+
+    <!-- <div style="min-height:50rem;" section id="work" class="mt-2"></div> -->
+
+  </div><!--first col end-->
+  <!-- sed col start--> 
+  <!-- <div  class="col-12 col-sm-12 col-md-12 col-lg-5 "> -->
+
+    <!-- <div style="margin-top:10rem;"></div> -->
+
+    <!-- Responsive slide show -->
+ <!-- <div class="container-fluid row mt-5 justify-content-center ">
+  <h3 class="text-center mb-5 tex "><u>Certifications & Recommendation Letter</u> </h3>
+
+  <div id="certCarousel" class="carousel slide col-11 col-sm-11 col-md-5 col-lg-5 shadow-lg p-2 mb-5 bg-white rounded" data-ride="carousel"> -->
+
+    <!-- Indicators -->
+    <!-- <ol class="carousel-indicators justify-content-evenly ">
+      <li data-target="#certCarousel" data-slide-to="0" class="active bg-warning ms-3 "></li>
+      <li data-target="#certCarousel" data-slide-to="1" class="bg-warning"></li>
+      <li data-target="#certCarousel" data-slide-to="2" class="bg-warning"></li>
+    </ol> -->
+
+    <!-- Wrapper for slides -->
+    <!-- <div class="carousel-inner  ">
+
+      <div class="item active">
+        <img src="images/img940.jpg" alt="Certification 1">
+        <div class="carousel-caption"> -->
+          <!-- <h3>Certification Title 1</h3> -->
+          <!-- <p>Issued by Organization</p> -->
+        <!-- </div>
+      </div> -->
+
+      <!-- <div class="item">
+        <img src="images/desing.png" alt="Certification 2">
+        <div class="carousel-caption"> -->
+          <!-- <h3>Certification Title 2</h3> -->
+          <!-- <p>Issued by Organization</p> -->
+        <!-- </div>
+      </div> -->
+
+      <!-- <div class="item">
+        <img src="images/bootcamp.png" alt="Certification 3">
+        <div class="carousel-caption"> -->
+          <!-- <h3>Certification Title 3</h3> -->
+          <!-- <p>Issued by Organization</p> -->
+        <!-- </div>
+      </div> -->
+
+    <!-- </div> -->
+
+    <!-- Controls -->
+    <!-- <a class="left carousel-control" href="#certCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left fs-3"></span>
+    </a>
+    <a class="right carousel-control" href="#certCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right fs-3"></span>
+    </a> -->
+  <!-- </div>
+</div> -->
+<!-- End Responsive slide show -->
+
+  <!-- </div> -->
+  <!--sed col end--> 
+
+
+
+
+   
+
+</div>                                              
 
     <!-- RESUME END row -->
 
 
    
                                                   <!-- project show start -->
-
+  <div section id="work"></div>
+  <div  style="margin-top: 15rem;"></div>
+  <div  class="row mt-5 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5 justify-content-center border border-0 border-dark" >
   
-  <div class="row mt-5 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5 justify-content-center border border-0 border-dark" >
-  
-    <div class="row justify-content-evenly  mt-5 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5">   
+    <div  class="row justify-content-evenly  mt-5 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5">   
      <div class="row mt-lg-5 mt-xl-5 mt-5 border border-0 border-dark"><h2 class="underline-small tex" data-animation="slideInUp" data-animation-delay=".5s">SOME THINGS I'VE BUILT</h2><p class="underline-smallgi" data-animation="slideInRight" data-animation-delay=".5s"></p></div>
 
 
@@ -924,6 +1014,9 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
                                                          <!-- content end -->
 </div>
 <!-- content col end -->
+
+</div>  <!--End sec container zoom in-->
+
 </div>
 <!-- main row end -->
     
@@ -1031,6 +1124,7 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
 
  <!-- end footer -->
 
-
+ 
+   
 </body>
 </html>
