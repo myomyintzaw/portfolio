@@ -176,7 +176,8 @@ $(document).ready(function($) {
           value: percent / 100,
           thickness: 14,
           fill: {
-            color:'#4288d0'
+            color:'#42d044'
+            // #4288d0
           }
         }).on('circle-animation-progress', function(event, progress, stepValue) {
           $(this).find('div').text((stepValue * 100).toFixed(1) + "%");
