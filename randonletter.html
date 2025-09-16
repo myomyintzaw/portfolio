@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: #0e0e0e;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      #intro {
+        font-size: 3rem;
+        max-width: 800px;
+        text-align: center;
+        line-height: 1.3;
+        white-space: pre-wrap;
+      }
+
+      #intro .char {
+        display: inline-block;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1 id="intro">
+  Hi, I'm Alex — Creative Web Developer
+</h1>
+
+
+    <script>
+      // Split text into characters
+      const split = new SplitText("#intro", { type: "chars" });
+      const chars = split.chars;
+
+      // Preserve spaces
+      chars.forEach((char) => {
+        if (char.textContent === " ") char.innerHTML = "&nbsp;";
+      });
+
+      // Timeline
+      const tl = gsap.timeline({
+        defaults: { duration: 0.7, ease: "power2.out" },
+      });
+
+      // Animate each character in random order
+      const maxStartTime = 1 - 0.15;
+      for (let i = 0; i < chars.length; i++) {
+        let delay = Math.random() * maxStartTime;
+        tl.from(chars[i], { opacity: 0, y: 30 }, delay);
+      }
+    </script>
+  </body>
+</html>

@@ -1,6 +1,4 @@
-
-
-const AnimateOnScroll = function ({ offset } = { offset:1}) {
+const AnimateOnScroll = function ({ offset } = { offset: 1 }) {
   // Define a dobra superior, inferior e laterais da tela
   const windowTop = (offset * window.innerHeight) / 100;
   const windowBottom = window.innerHeight - windowTop;
@@ -78,11 +76,10 @@ const AnimateOnScroll = function ({ offset } = { offset:1}) {
 
 // Initialize
 const options = {
-  offset:1 // percentage of the window
+  offset: 1, // percentage of the window
 };
 
 const animation = new AnimateOnScroll(options);
-
 
 ////// on scroll skill bar
 
@@ -98,90 +95,98 @@ const animation = new AnimateOnScroll(options);
 // }
 // });
 
-
-
 // slide menu start ////////////////////////////////////
 
-
 function myFunction(x) {
-  if (x.matches) { // If media query matches
-    //  document.body.style.backgroundColor="yellow";   
-  //    $(document).ready(function(){
-  //   $("div").animate({right: '-125px'});
-  // })
+  if (x.matches) {
+    // If media query matches
+    //  document.body.style.backgroundColor="yellow";
+    //    $(document).ready(function(){
+    //   $("div").animate({right: '-125px'});
+    // })
 
- $(function() {
- setTimeout(function() { $("#jqsidenav").fadeOut(1500); }, 100)   
- });
+    $(function () {
+      setTimeout(function () {
+        $("#jqsidenav").fadeOut(1500);
+      }, 100);
+    });
+  } else {
+    //  document.body.style.backgroundColor = "pink";
+    //    $(document).ready(function(){
 
+    //  $("div").animate({right:'0px'});
+    // });
 
-} else {
-  //  document.body.style.backgroundColor = "pink";  
-//    $(document).ready(function(){
+    $(document).ready(function () {
+      $("#scout").click(function () {
+        function myFunction(x) {
+          if (x.matches) {
+            setTimeout(function () {
+              $("#jqsidenav").fadeOut(1000);
+            }, 1000);
+          } else {
+            setTimeout(function () {
+              $("#jqsidenav").fadeOut(1000);
+            }, 1000);
+            setTimeout(function () {
+              $("#jqsidenav").fadeIn(1500);
+            }, 1000);
+          }
+        }
+      });
+    });
 
-//  $("div").animate({right:'0px'});   
-// });
-
-$(document).ready(function(){
-$("#scout").click(function(){
-function myFunction(x){
-  if(x.matches){
-    setTimeout(function() { $("#jqsidenav").fadeOut(1000); }, 1000)
-}else{setTimeout(function() { $("#jqsidenav").fadeOut(1000); }, 1000)
-setTimeout(function() { $("#jqsidenav").fadeIn(1500); }, 1000)
+    $(function () {
+      setTimeout(function () {
+        $("#jqsidenav").fadeIn(1500);
+      }, 1000);
+    });
+  }
 }
-}
 
-});
-});
-
-$(function() {
- setTimeout(function() { $("#jqsidenav").fadeIn(1500); }, 1000)
-})                
-}
-           
-}
-
-
-var x = window.matchMedia("(max-width:992px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+var x = window.matchMedia("(max-width:992px)");
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction); // Attach listener function on state changes
 
 // var y = window.matchMedia("(max-width: 600px)")
 // myFunction(y) // Call listener function at run time
 // y.addListener(myFunction)
 
-
 ///////////////slide menu end////////////////////////
 
-
-
-
-
-///////////////////circle skill bar on scroll start//////#1B58B8///#6923f4  aquamarine////////  
+///////////////////circle skill bar on scroll start//////#1B58B8///#6923f4  aquamarine////////
 
 console.log("JavaScript is amazing!");
-$(document).ready(function($) {
+$(document).ready(function ($) {
   function animateElements() {
-    $('.progressbar').each(function() {
+    $(".progressbar").each(function () {
       var elementPos = $(this).offset().top;
       var topOfWindow = $(window).scrollTop();
-      var percent = $(this).find('.circlezc').attr('data-percent');
+      var percent = $(this).find(".circlezc").attr("data-percent");
       var percentage = parseInt(percent, 10) / parseInt(100, 10);
-      var animate = $(this).data('animate');
+      var animate = $(this).data("animate");
       if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
-        $(this).data('animate', true);
-        $(this).find('.circlezc').circleProgress({
-          startAngle: -Math.PI / 2,
-          value: percent / 100,
-          thickness: 14,
-          fill: {
-            color:'#42d044'
-            // #4288d0
-          }
-        }).on('circle-animation-progress', function(event, progress, stepValue) {
-          $(this).find('div').text((stepValue * 100).toFixed(1) + "%");
-        }).stop();
+        $(this).data("animate", true);
+        $(this)
+          .find(".circlezc")
+          .circleProgress({
+            startAngle: -Math.PI / 2,
+            value: percent / 100,
+            thickness: 14,
+            fill: {
+              color: "#42d044",
+              // #4288d0
+            },
+          })
+          .on(
+            "circle-animation-progress",
+            function (event, progress, stepValue) {
+              $(this)
+                .find("div")
+                .text((stepValue * 100).toFixed(1) + "%");
+            }
+          )
+          .stop();
       }
     });
   }
@@ -194,95 +199,97 @@ $(document).ready(function($) {
 // #4288d0 #5e1ae6 #470ac2 #530ce0
 ///////////////////circle skill bar on scroll end/////////////////
 
-
-
-
-
-
 // Auto typing start ////////////////////////////////
 
 // Photograping / Creative Ideas
-const words =["Profession Develop.   ","Design Solutions.      ","Creativity And Innovation.       ","Problem-Solving.       ", "Responsive Web Design.     ","UI/UH Desinging.      ",  "SQL/NoSQL.        "];
+const words = [
+  "Profession Develop.   ",
+  "Design Solutions.      ",
+  "Creativity And Innovation.       ",
+  "Problem-Solving.       ",
+  "Responsive Web Design.     ",
+  "UI/UH Desinging.      ",
+  "SQL/NoSQL.        ",
+];
 let i = 0;
 let timer;
 
 function typingEffect() {
-	let word = words[i].split("");
-	var loopTyping = function() {
-		if (word.length > 0) {
-			document.getElementById('word').innerHTML += word.shift();
-		} else {
-			deletingEffect();
-			return false;
-		};
-		timer = setTimeout(loopTyping, 130);
-	};
-	loopTyping();
-};
+  let word = words[i].split("");
+  var loopTyping = function () {
+    if (word.length > 0) {
+      document.getElementById("word").innerHTML += word.shift();
+    } else {
+      deletingEffect();
+      return false;
+    }
+    timer = setTimeout(loopTyping, 130);
+  };
+  loopTyping();
+}
 
 function deletingEffect() {
-	let word = words[i].split("");
-	var loopDeleting = function() {
-		if (word.length > 0) {
-			word.pop();
-			document.getElementById('word').innerHTML = word.join("");
-		} else {
-			if (words.length > (i + 1)) {
-				i++;
-			} else {
-				i = 0;
-			};
-			typingEffect();
-			return false;
-		};
-		timer = setTimeout(loopDeleting, 100);
-	};
-	loopDeleting();
-};
+  let word = words[i].split("");
+  var loopDeleting = function () {
+    if (word.length > 0) {
+      word.pop();
+      document.getElementById("word").innerHTML = word.join("");
+    } else {
+      if (words.length > i + 1) {
+        i++;
+      } else {
+        i = 0;
+      }
+      typingEffect();
+      return false;
+    }
+    timer = setTimeout(loopDeleting, 100);
+  };
+  loopDeleting();
+}
 
 typingEffect();
 
 ////////////////////////////// Auto typing end///////////////
 
-
 //////// section start//////////////////////////////
 
-var sections = $('section')
-  , nav = $('nav')
-  , nav_height = nav.outerHeight();
-$(window).on('scroll', function () {
+var sections = $("section"),
+  nav = $("nav"),
+  nav_height = nav.outerHeight();
+$(window).on("scroll", function () {
   var cur_pos = $(this).scrollTop();
- 
-  sections.each(function() {
+
+  sections.each(function () {
     var top = $(this).offset().top - nav_height,
-        bottom = top + $(this).outerHeight();
+      bottom = top + $(this).outerHeight();
 
     if (cur_pos >= top && cur_pos <= bottom) {
-      nav.find('a').removeClass('active');
-      sections.removeClass('active');
- 
-      $(this).addClass('active');
-      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+      nav.find("a").removeClass("active");
+      sections.removeClass("active");
+
+      $(this).addClass("active");
+      nav.find('a[href="#' + $(this).attr("id") + '"]').addClass("active");
     }
   });
 });
-nav.find('a').on('click', function () {
-  var $el = $(this)
-    , id = $el.attr('href');
- 
-  $('html, body').animate({
-    scrollTop: $(id).offset().top},1500);
- 
+nav.find("a").on("click", function () {
+  var $el = $(this),
+    id = $el.attr("href");
+
+  $("html, body").animate(
+    {
+      scrollTop: $(id).offset().top,
+    },
+    1500
+  );
+
   return false;
 });
 
 ////////////// section end///////////////
 
-
-
-
 // /////////circle skill bar suppter start ///////////
-
 
 /**
  * jquery-circle-progress - jQuery Plugin to draw animated circular progress bars:
@@ -295,20 +302,20 @@ nav.find('a').on('click', function () {
  */
 // UMD factory - https://github.com/umdjs/umd/blob/d31bb6ee7098715e019f52bdfe27b3e4bfd2b97e/templates/jqueryPlugin.js
 // Uses AMD, CommonJS or browser globals to create a jQuery plugin.
-(function(factory) {
-  if (typeof define === 'function' && define.amd) {
+(function (factory) {
+  if (typeof define === "function" && define.amd) {
     // AMD - register as an anonymous module
-    define(['jquery'], factory);
-  } else if (typeof module === 'object' && module.exports) {
+    define(["jquery"], factory);
+  } else if (typeof module === "object" && module.exports) {
     // Node/CommonJS
-    var $ = require('jquery');
+    var $ = require("jquery");
     factory($);
     module.exports = $;
   } else {
     // Browser globals
     factory(jQuery);
   }
-})(function($) {
+})(function ($) {
   /**
    * Inner implementation of the circle progress bar.
    * The class is not exposed _yet_ but you can create an instance through jQuery method call.
@@ -351,7 +358,7 @@ nav.find('a').on('click', function () {
      * @type {number|string}
      * @default 'auto'
      */
-    thickness: 'auto',
+    thickness: "auto",
 
     /**
      * Fill of the arc. You may set it to:
@@ -373,7 +380,7 @@ nav.find('a').on('click', function () {
      * @default {gradient: ['#3aeabb', '#fdd250']}
      */
     fill: {
-      gradient: ['#3aeabb', '#fdd250']
+      gradient: ["#3aeabb", "#fdd250"],
     },
 
     /**
@@ -381,7 +388,7 @@ nav.find('a').on('click', function () {
      * @type {string}
      * @default 'rgba(0, 0, 0, .1)'
      */
-    emptyFill: 'rgba(0, 0, 0, .1)',
+    emptyFill: "rgba(0, 0, 0, .1)",
 
     /**
      * jQuery Animation config.
@@ -392,7 +399,7 @@ nav.find('a').on('click', function () {
      */
     animation: {
       duration: 1200,
-      easing: 'circleProgressEasing'
+      easing: "circleProgressEasing",
     },
 
     /**
@@ -419,14 +426,14 @@ nav.find('a').on('click', function () {
      * @type {string}
      * @default 'butt'
      */
-    lineCap: 'butt',
+    lineCap: "butt",
 
     /**
      * Canvas insertion mode: append or prepend it into the parent element?
      * @type {string}
      * @default 'prepend'
      */
-    insertMode: 'prepend',
+    insertMode: "prepend",
 
     //------------------------------ protected properties and methods ------------------------------
     /**
@@ -486,31 +493,33 @@ nav.find('a').on('click', function () {
      *
      * @param {object} config - You can customize any class member (property or method).
      */
-    init: function(config) {
+    init: function (config) {
       $.extend(this, config);
       this.radius = this.size / 2;
       this.initWidget();
       this.initFill();
       this.draw();
-      this.el.trigger('circle-inited');
+      this.el.trigger("circle-inited");
     },
 
     /**
      * Initialize `<canvas>`.
      * @protected
      */
-    initWidget: function() {
+    initWidget: function () {
       if (!this.canvas)
-        this.canvas = $('<canvas>')[this.insertMode == 'prepend' ? 'prependTo' : 'appendTo'](this.el)[0];
+        this.canvas = $("<canvas>")[
+          this.insertMode == "prepend" ? "prependTo" : "appendTo"
+        ](this.el)[0];
 
       var canvas = this.canvas;
       canvas.width = this.size;
       canvas.height = this.size;
-      this.ctx = canvas.getContext('2d');
+      this.ctx = canvas.getContext("2d");
 
       if (window.devicePixelRatio > 1) {
         var scaleBy = window.devicePixelRatio;
-        canvas.style.width = canvas.style.height = this.size + 'px';
+        canvas.style.width = canvas.style.height = this.size + "px";
         canvas.width = canvas.height = this.size * scaleBy;
         this.ctx.scale(scaleBy, scaleBy);
       }
@@ -521,20 +530,17 @@ nav.find('a').on('click', function () {
      * It could do this async (on image load).
      * @protected
      */
-    initFill: function() {
+    initFill: function () {
       var self = this,
         fill = this.fill,
         ctx = this.ctx,
         size = this.size;
 
-      if (!fill)
-        throw Error("The fill is not specified!");
+      if (!fill) throw Error("The fill is not specified!");
 
-      if (typeof fill == 'string')
-        fill = {color: fill};
+      if (typeof fill == "string") fill = { color: fill };
 
-      if (fill.color)
-        this.arcFill = fill.color;
+      if (fill.color) this.arcFill = fill.color;
 
       if (fill.gradient) {
         var gr = fill.gradient;
@@ -544,11 +550,11 @@ nav.find('a').on('click', function () {
         } else if (gr.length > 1) {
           var ga = fill.gradientAngle || 0, // gradient direction angle; 0 by default
             gd = fill.gradientDirection || [
-                size / 2 * (1 - Math.cos(ga)), // x0
-                size / 2 * (1 + Math.sin(ga)), // y0
-                size / 2 * (1 + Math.cos(ga)), // x1
-                size / 2 * (1 - Math.sin(ga))  // y1
-              ];
+              (size / 2) * (1 - Math.cos(ga)), // x0
+              (size / 2) * (1 + Math.sin(ga)), // y0
+              (size / 2) * (1 + Math.cos(ga)), // x1
+              (size / 2) * (1 - Math.sin(ga)), // y1
+            ];
 
           var lg = ctx.createLinearGradient.apply(ctx, gd);
 
@@ -578,18 +584,16 @@ nav.find('a').on('click', function () {
           img.src = fill.image;
         }
 
-        if (img.complete)
-          setImageFill();
-        else
-          img.onload = setImageFill;
+        if (img.complete) setImageFill();
+        else img.onload = setImageFill;
       }
 
       function setImageFill() {
-        var bg = $('<canvas>')[0];
+        var bg = $("<canvas>")[0];
         bg.width = self.size;
         bg.height = self.size;
-        bg.getContext('2d').drawImage(img, 0, 0, size, size);
-        self.arcFill = self.ctx.createPattern(bg, 'no-repeat');
+        bg.getContext("2d").drawImage(img, 0, 0, size, size);
+        self.arcFill = self.ctx.createPattern(bg, "no-repeat");
         self.drawFrame(self.lastFrameValue);
       }
     },
@@ -598,11 +602,9 @@ nav.find('a').on('click', function () {
      * Draw the circle.
      * @protected
      */
-    draw: function() {
-      if (this.animation)
-        this.drawAnimated(this.value);
-      else
-        this.drawFrame(this.value);
+    draw: function () {
+      if (this.animation) this.drawAnimated(this.value);
+      else this.drawFrame(this.value);
     },
 
     /**
@@ -610,7 +612,7 @@ nav.find('a').on('click', function () {
      * @protected
      * @param {number} v - Frame value.
      */
-    drawFrame: function(v) {
+    drawFrame: function (v) {
       this.lastFrameValue = v;
       this.ctx.clearRect(0, 0, this.size, this.size);
       this.drawEmptyArc(v);
@@ -622,9 +624,8 @@ nav.find('a').on('click', function () {
      * @protected
      * @param {number} v - Frame value.
      */
-    drawArc: function(v) {
-      if (v === 0)
-        return;
+    drawArc: function (v) {
+      if (v === 0) return;
 
       var ctx = this.ctx,
         r = this.radius,
@@ -652,7 +653,7 @@ nav.find('a').on('click', function () {
      * @protected
      * @param {number} v - Frame value.
      */
-    drawEmptyArc: function(v) {
+    drawEmptyArc: function (v) {
       var ctx = this.ctx,
         r = this.radius,
         t = this.getThickness(),
@@ -692,28 +693,36 @@ nav.find('a').on('click', function () {
      * @protected
      * @param {number} v - Final value.
      */
-    drawAnimated: function(v) {
+    drawAnimated: function (v) {
       var self = this,
         el = this.el,
         canvas = $(this.canvas);
 
       // stop previous animation before new "start" event is triggered
       canvas.stop(true, false);
-      el.trigger('circle-animation-start');
+      el.trigger("circle-animation-start");
 
       canvas
-        .css({animationProgress: 0})
-        .animate({animationProgress: 1}, $.extend({}, this.animation, {
-          step: function(animationProgress) {
-            var stepValue = self.animationStartValue * (1 - animationProgress) + v * animationProgress;
-            self.drawFrame(stepValue);
-            el.trigger('circle-animation-progress', [animationProgress, stepValue]);
-          }
-        }))
+        .css({ animationProgress: 0 })
+        .animate(
+          { animationProgress: 1 },
+          $.extend({}, this.animation, {
+            step: function (animationProgress) {
+              var stepValue =
+                self.animationStartValue * (1 - animationProgress) +
+                v * animationProgress;
+              self.drawFrame(stepValue);
+              el.trigger("circle-animation-progress", [
+                animationProgress,
+                stepValue,
+              ]);
+            },
+          })
+        )
         .promise()
-        .always(function() {
+        .always(function () {
           // trigger on both successful & failure animation end
-          el.trigger('circle-animation-end');
+          el.trigger("circle-animation-end");
         });
     },
 
@@ -723,7 +732,7 @@ nav.find('a').on('click', function () {
      * @protected
      * @returns {number}
      */
-    getThickness: function() {
+    getThickness: function () {
       return $.isNumeric(this.thickness) ? this.thickness : this.size / 14;
     },
 
@@ -732,7 +741,7 @@ nav.find('a').on('click', function () {
      * @protected
      * @return {number}
      */
-    getValue: function() {
+    getValue: function () {
       return this.value;
     },
 
@@ -741,25 +750,23 @@ nav.find('a').on('click', function () {
      * @protected
      * @param {number} newValue
      */
-    setValue: function(newValue) {
-      if (this.animation)
-        this.animationStartValue = this.lastFrameValue;
+    setValue: function (newValue) {
+      if (this.animation) this.animationStartValue = this.lastFrameValue;
       this.value = newValue;
       this.draw();
-    }
+    },
   };
 
   //----------------------------------- Initiating jQuery plugin -----------------------------------
   $.circleProgress = {
     // Default options (you may override them)
-    defaults: CircleProgress.prototype
+    defaults: CircleProgress.prototype,
   };
 
   // ease-in-out-cubic
-  $.easing.circleProgressEasing = function(x, t, b, c, d) {
-    if ((t /= d / 2) < 1)
-      return c / 2 * t * t * t + b;
-    return c / 2 * ((t -= 2) * t * t + 2) + b;
+  $.easing.circleProgressEasing = function (x, t, b, c, d) {
+    if ((t /= d / 2) < 1) return (c / 2) * t * t * t + b;
+    return (c / 2) * ((t -= 2) * t * t + 2) + b;
   };
 
   /**
@@ -788,30 +795,34 @@ nav.find('a').on('click', function () {
    * @see CircleProgress
    * @alias "$(...).circleProgress"
    */
-  $.fn.circleProgress = function(configOrCommand, commandArgument) {
-    var dataName = 'circle-progress',
+  $.fn.circleProgress = function (configOrCommand, commandArgument) {
+    var dataName = "circle-progress",
       firstInstance = this.data(dataName);
 
-    if (configOrCommand == 'widget') {
+    if (configOrCommand == "widget") {
       if (!firstInstance)
-        throw Error('Calling "widget" method on not initialized instance is forbidden');
+        throw Error(
+          'Calling "widget" method on not initialized instance is forbidden'
+        );
       return firstInstance.canvas;
     }
 
-    if (configOrCommand == 'value') {
+    if (configOrCommand == "value") {
       if (!firstInstance)
-        throw Error('Calling "value" method on not initialized instance is forbidden');
-      if (typeof commandArgument == 'undefined') {
+        throw Error(
+          'Calling "value" method on not initialized instance is forbidden'
+        );
+      if (typeof commandArgument == "undefined") {
         return firstInstance.getValue();
       } else {
         var newValue = arguments[1];
-        return this.each(function() {
+        return this.each(function () {
           $(this).data(dataName).setValue(newValue);
         });
       }
     }
 
-    return this.each(function() {
+    return this.each(function () {
       var el = $(this),
         instance = el.data(dataName),
         config = $.isPlainObject(configOrCommand) ? configOrCommand : {};
@@ -820,9 +831,9 @@ nav.find('a').on('click', function () {
         instance.init(config);
       } else {
         var initialConfig = $.extend({}, el.data());
-        if (typeof initialConfig.fill == 'string')
+        if (typeof initialConfig.fill == "string")
           initialConfig.fill = JSON.parse(initialConfig.fill);
-        if (typeof initialConfig.animation == 'string')
+        if (typeof initialConfig.animation == "string")
           initialConfig.animation = JSON.parse(initialConfig.animation);
         config = $.extend(initialConfig, config);
         config.el = el;
@@ -835,14 +846,15 @@ nav.find('a').on('click', function () {
 
 //////////////////////// circle skill bar suppter end///////////////////////
 
-
 /////////////////// scroll arrow up//////////////////////////
 
 // Get the button
 let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -858,10 +870,90 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-
 /////////////////// scroll arrow up end//////////////////////////
 
 ////////////// scroll spy codepen////////////////////////////////
 
-
 ////////////// scroll spy codepen end////////////////////////////////
+
+// Text letter animation
+
+// const text = document.querySelector(".animated-text");
+// const letters = text.textContent.split("");
+// text.textContent="";
+
+
+// letters.forEach(letter => {
+//   const span = document.createElement("span");
+//   span.textContent = letter;
+//   text.appendChild(span);
+// });
+
+// // Shuffle the spans randomly
+// const spans = [...text.querySelectorAll("span")];
+// const order = spans.map((_, i) => i).sort(() => Math.random() - 0.5);
+
+// order.forEach((i, index) => {
+//   spans[i].style.animationDelay = `${index * 0.1}s`;
+// });
+
+
+// const text = document.querySelector(".animated-text");
+// const letters = text.textContent.split("");
+// text.textContent = "";
+
+// letters.forEach(letter => {
+//   const span = document.createElement("span");
+//   // Preserve spaces
+//   span.innerHTML = letter === " " ? "&nbsp;" : letter;
+//   text.appendChild(span);
+// });
+
+// // Shuffle the spans randomly
+// const spans = [...text.querySelectorAll("span")];
+// const order = spans.map((_, i) => i).sort(() => Math.random() - 0.5);
+
+// order.forEach((i, index) => {
+//   spans[i].style.animationDelay = `${index * 0.1}s`;
+// });
+
+
+
+const text = document.querySelector(".animated-text");
+const letters = text.textContent.split("");
+text.textContent = "";
+
+letters.forEach(letter => {
+  const span = document.createElement("span");
+  // Preserve spaces
+  span.innerHTML = letter === " " ? "&nbsp;" : letter;
+  
+  // Random color glow effect
+  // const colors = ["#ff6", "#0ff", "#f0f", "#0f0", "#f66"];
+  const colors = ["", "#0ff", "#f0f", "#0f0", "#f66"];
+
+  span.style.color = colors[Math.floor(Math.random() * colors.length)];
+  
+  text.appendChild(span);
+});
+
+// Animate letters in random order
+const spans = [...text.querySelectorAll("span")];
+const order = spans.map((_, i) => i).sort(() => Math.random() - 0.5);
+
+order.forEach((i, index) => {
+  spans[i].style.animationDelay = `${index * 0.1}s`;
+});
+
+
+
+
+// text.innerHTML = text.textContent
+//   .split("")
+//   .map(
+//     (letter, i) => `<span style="animation-delay:${i * 0.1}s">${letter}</span>`
+//   )
+//   .join("");
+
+
+// End Text letter animation
