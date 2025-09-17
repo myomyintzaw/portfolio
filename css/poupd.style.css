@@ -1663,27 +1663,119 @@ div.col-sm-9 div {
 } */
 
 
+/* ====================================================================== */
 
-.animated-text span {
+/* .animated-text span {
   display: inline-block;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeUp 0.8s forwards;
-}
+} */
 
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+/* @keyframes fadeUp { */
+  /* to { */
+    /* opacity: 1; */
+    /* transform: translateY(0); */
     /* text-shadow: 0 0 8px rgba(105, 168, 50, 0.667), 0 0 12px rgb(231, 218, 250);  */
-    text-shadow: 0 0 8px rgba(142, 170, 118, 0.667), 0 0 12px rgb(208, 200, 221); 
+    /* text-shadow: 0 0 8px rgba(142, 170, 118, 0.667), 0 0 12px rgb(208, 200, 221);  */
 
     /* text-shadow: 0 0 8px #fffa, 0 0 12px #f0f; */
      /* subtle glow */
 
     /* text-shadow: 0 0 8px rgba(124, 134, 117, 0.667), 0 0 12px rgb(175, 158, 201);  */  /* subtle glow*/
+  /* }
+} */
+
+/* ================================================================================================
+*/
+
+
+/* 
+.animated-text {
+  display: inline-block;
+  font-size: clamp(1.5rem, 5vw, 4rem);
+   /* responsive font scaling */
+  /* font-weight: bold; */
+  /* text-align: center; */
+  /* white-space: normal;  */
+  /* allow wrapping on smaller screens */
+  /* word-break: break-word; */
+/* } */
+
+/* .animated-text span {
+  opacity: 0;
+  display: inline-block;
+  animation: fadeIn 0.6s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(0.5em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}  */
+/* ========================================================================= */
+
+/* Parent container to center content responsively */
+
+
+.animated-text {
+ 
+  display: inline-block;
+  font-size: clamp(1.5rem, 5vw, 4rem); /* responsive font scaling */
+  font-weight: bold;
+  white-space: normal;  /* allow wrapping */
+  word-break: break-word;
+  line-height: 1.2;
+  width: clamp(200px, 100%, 600px); /* min 200px, preferred 50% of parent, max 600px */
+  padding: clamp(0.5rem, 2vw, 1rem);
+}
+
+.animated-text span {
+  opacity: 0;
+  display: inline-block;
+  animation: fadeIn 0.6s forwards;
+}
+
+
+  
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(0.5em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
+
+
+
+.word {
+    display: flex;           /* letters inside a word stay together */
+    margin-right: 0.5em;     /* space between words */
+    margin-bottom: 0.2em;    /* spacing when wrapped */
+  }
+
+  .word span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: floatIn 0.5s forwards;
+  }
+
+
+
+
+
+
+
 
 
 
@@ -1708,3 +1800,56 @@ div.col-sm-9 div {
 
 
 /* End Text letter Animation */
+
+
+
+/********************************* tab-nav **************************************/
+.tab-nav {
+  display: flex;
+  /* border-bottom: 2px solid #ddd; */
+  overflow-x: auto;        /* helps on small screens */
+}
+
+.tab {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab.active {
+  border-bottom-color: #007bff;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.tab-content {
+  display: none;
+  padding: 1rem;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Responsive (stack on small screens) */
+@media (max-width: 600px) {
+  .tab-nav {
+    flex-direction: column;
+    border-bottom: none;
+    border-right: 2px solid #ddd;
+  }
+  .tab {
+    text-align: left;
+    border-right: 3px solid transparent;
+    border-bottom: none;
+  }
+  .tab.active {
+    border-right-color: #007bff;
+    border-bottom-color: transparent;
+  }
+}
+/* end tab-nav */

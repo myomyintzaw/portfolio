@@ -918,32 +918,94 @@ function topFunction() {
 // });
 
 
+// =============================================================
+// const text = document.querySelector(".animated-text");
+// const letters = text.textContent.split("");
+// text.textContent ="";
 
+// letters.forEach(letter => {
+//   const span = document.createElement("span");
+//   // Preserve spaces
+//   span.innerHTML = letter === " " ? "&nbsp;" : letter;
+  
+//   // Random color glow effect
+//   // const colors = ["#ff6", "#0ff", "#f0f", "#0f0", "#f66"];
+//   const colors = ["", "#0ff", "#f0f", "#0f0", "#f66"];
+
+//   span.style.color = colors[Math.floor(Math.random() * colors.length)];
+  
+//   text.appendChild(span);
+// });
+
+// // Animate letters in random order
+// const spans = [...text.querySelectorAll("span")];
+// const order = spans.map((_,i) => i).sort(() => Math.random() - 0.5);
+
+// order.forEach((i, index) => {
+//   spans[i].style.animationDelay =`${index * 0.1}s`;
+// });
+
+// ====================================================================
+
+//====================== text Random ============================
 const text = document.querySelector(".animated-text");
 const letters = text.textContent.split("");
-text.textContent ="";
+text.textContent = "";
 
 letters.forEach(letter => {
   const span = document.createElement("span");
-  // Preserve spaces
+  
   span.innerHTML = letter === " " ? "&nbsp;" : letter;
-  
-  // Random color glow effect
-  // const colors = ["#ff6", "#0ff", "#f0f", "#0f0", "#f66"];
-  const colors = ["", "#0ff", "#f0f", "#0f0", "#f66"];
 
+  const colors = ["", "#0ff", "#f0f", "#0f0", "#f66"];
   span.style.color = colors[Math.floor(Math.random() * colors.length)];
-  
+
   text.appendChild(span);
 });
 
-// Animate letters in random order
 const spans = [...text.querySelectorAll("span")];
-const order = spans.map((_,i) => i).sort(() => Math.random() - 0.5);
+const order = spans.map((_, i) => i).sort(() => Math.random() - 0.5);
 
 order.forEach((i, index) => {
-  spans[i].style.animationDelay =`${index * 0.1}s`;
+  spans[i].style.animationDelay = `${index * 0.1}s`;
 });
+
+
+
+
+
+
+// ===========================End text Random====================================================
+
+// const text = document.querySelector(".animated-text");
+// const letters = text.textContent.split("");
+// text.textContent = "";
+
+
+// // Create spans for each letter
+// letters.forEach(letter => {
+//   const span = document.createElement("span");
+
+//   if (letter === " ") {
+//     span.innerHTML = "&nbsp;";
+//     span.classList.add("space");
+//   } else {
+//     span.textContent = letter;
+//   }
+
+//   const colors = ["#0ff", "#f0f", "#0f0", "#f66", "#ff0"];
+//   span.style.color = colors[Math.floor(Math.random() * colors.length)];
+
+//   text.appendChild(span);
+// });
+
+// // Animate letters in original order
+// const spans = [...text.querySelectorAll("span")];
+// spans.forEach((span, index) => {
+//   span.style.animationDelay = `${index * 0.1}s`;
+// });
+
+
 
 
 
