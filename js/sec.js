@@ -205,7 +205,7 @@ $(document).ready(function ($) {
 const words = [
   "Profession Develop.   ",
   "Design Solutions.      ",
-  "Creativity And Innovation.       ",
+  "Creativity & Innovation.       ",
   "Problem-Solving.       ",
   "Responsive Web Design.     ",
   "UI/UH Desinging.      ",
@@ -921,7 +921,7 @@ function topFunction() {
 
 const text = document.querySelector(".animated-text");
 const letters = text.textContent.split("");
-text.textContent = "";
+text.textContent ="";
 
 letters.forEach(letter => {
   const span = document.createElement("span");
@@ -939,10 +939,10 @@ letters.forEach(letter => {
 
 // Animate letters in random order
 const spans = [...text.querySelectorAll("span")];
-const order = spans.map((_, i) => i).sort(() => Math.random() - 0.5);
+const order = spans.map((_,i) => i).sort(() => Math.random() - 0.5);
 
 order.forEach((i, index) => {
-  spans[i].style.animationDelay = `${index * 0.1}s`;
+  spans[i].style.animationDelay =`${index * 0.1}s`;
 });
 
 
