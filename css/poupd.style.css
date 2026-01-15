@@ -166,7 +166,7 @@ fixed positon  ///////////////////////*/
 
 .sidenavbe a:hover {
   /* color: #f1f1f1; */
-  color: #3e19c4;
+  /* color: #3e19c4; */
 }
 
 .sidenavbe .closebtn {
@@ -207,12 +207,14 @@ li {
 
 .nav-link {
   /* background-color: #ddd; */
-  background-color: #cabcfe;
+  /* background-color: #cabcfe; */
   /* background-color:#ffff; */
   /* background-color: aquamarine;  */
   /* #0dcaf0 #20c997 #6f42c1 #6610f2 #d63384 #4288d0 */
   /* background-color:rgba(69, 69, 255, 0.879);  */
   /* color: #bbb; */
+  background: linear-gradient(135deg, #aa9c92, #a8d1379d);
+  /* border-color: #0dcaf0; */
 
   margin: auto auto auto -25px;
   /* color: #111; */
@@ -230,9 +232,12 @@ li {
   margin-top: 8px;
 }
 
+
+
 .nav-link:hover {
   line-height: 100px;
   width: 112px;
+   color: #fff;
   /* color:rgb(82, 16, 16); */
   /* background-color:#0d6efd;        */
   /* /* background-color:#142641; */
@@ -241,7 +246,9 @@ li {
   /* background-color:#4a465b;  */
   /* background-color:#a29eb8;  */
 }
-
+.list-group-item {
+  border-color: transparent !important;
+}
 /* .nav-link a{
     background-color: aquamarine;  
     rgb(12, 90, 91)
@@ -505,8 +512,8 @@ p > a {
     border-color-bottom: rgba(247, 148, 30, 0.1);
   }
   100% {
-    /* border-color: #f7941e;  */
-    border-color: #6610f2;
+    border-color: #f7941e; 
+    /* border-color: #6610f2; */
   }
 }
 @keyframes checkmark {
@@ -1632,7 +1639,7 @@ div.col-sm-9 div {
   width: calc(100vh - 100px);
   border-radius: 2px;
   /* box-shadow: 0px 1px 10px #999; */
-  box-shadow: 0px 1px 30px #423feb;
+  box-shadow: 0px 1px 30px #3feb73;
 }
 
 /* /////////////// End nav shadow box //////////////*/
@@ -1853,3 +1860,30 @@ div.col-sm-9 div {
   }
 }
 /* end tab-nav */
+
+
+
+/*------------------------ nav circle photo-------------------------- */
+
+  .circle-photo {
+    /* width: 80px;
+    height: 80px; */
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .circle-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .circle-photo:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 15px rgba(155, 15, 15, 0.4);
+  }
+
+  
+/*------------------------ nav circle photo-------------------------- */
