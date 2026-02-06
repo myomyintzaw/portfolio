@@ -1,0 +1,78 @@
+/* button {
+  width: 100%;
+  padding: 12px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+} */
+
+.loader {
+  width: 22px;
+  height: 22px;
+  border: 3px solid #fff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: none;
+  margin: auto;
+}
+
+button.loading .btn-text {
+  display: none;
+}
+
+button.loading .loader {
+  display: block;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Success UI */
+.success-box {
+  display: none;
+  text-align: center;
+  animation: fadeUp 0.6s ease forwards;
+}
+
+/* .checkmark {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 4px solid #22c55e;
+  margin: 20px auto;
+  position: relative;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  border-right: 4px solid #22c55e;
+  border-bottom: 4px solid #22c55e;
+  transform: rotate(45deg);
+  left: 22px;
+  top: 10px;
+  animation: checkDraw 0.5s ease forwards;
+} */
+
+@keyframes checkDraw {
+  from { height: 0; width: 0; }
+  to { height: 40px; width: 20px; }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
