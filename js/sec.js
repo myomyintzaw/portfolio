@@ -208,7 +208,7 @@ const words = [
   "Creativity & Innovation.       ",
   "Problem-Solving.       ",
   "Responsive Web Design.     ",
-  "UI/UH Desinging.      ",
+  "UI/UX Desinging.      ",
   "SQL/NoSQL.        ",
 ];
 let i = 0;

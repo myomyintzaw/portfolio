@@ -1540,40 +1540,9 @@ Hello! I'm Myo Myint Zaw, a web developer based in Yangon, Myanmar.
               <p id="status"></p>
   <script src="https://cdn.emailjs.com/dist/email.min.js" ></script>
 
-<script>
-  (function () {
-  emailjs.init("wnN1OHZx0re5G-7qb"); // 🔑 Public Key
-})();
-
+  <script src="js/email.js"></script>  
  
-document.getElementById("contact-form")
-  .addEventListener("submit", function (e) {
-    e.preventDefault();
-    emailjs.sendForm(
-      "service_2poys7d",   // 📩 Service ID
-      "template_ivg6yyj",  // 🧾 Template ID
-      this
-    ).then(
-      function () {
-        document.getElementById("status").innerText =
-          "✅ Message sent successfully!";
-          status.style.color = "green";
-          status.style.fontWeight = "bold";
-          status.style.animation = "fadeIn 0.5s ease";
-        document.getElementById("contact-form").reset();
-          //  alert("hello world");
-      },
-
-      function (error) {
-        document.getElementById("status").innerText =
-          "❌ Failed to send message!";
-        console.log(error);
-      }
-    );
-  });
-
-</script>
-   <script src="script.js" ></script>
+   <!-- <script src="script.js" ></script> -->
 
           <!-- col end -->
          </div>
